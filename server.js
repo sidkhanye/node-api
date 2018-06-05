@@ -3,7 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
-//mongodb
+//Mongodb
 mongoose.connect('mongodb://localhost/rest_test');
 
 //express
@@ -18,6 +18,6 @@ app.use('/api', require('./routes/api'));
 //     res.send('server working');
 // });
 
-//testing/ starting up server
+//starting up server
 app.listen(8000);
 console.log('API currently running on port 8000');
