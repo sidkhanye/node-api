@@ -1,4 +1,4 @@
-// node dependencies
+// initialization of node.js dependencies
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 //Mongodb
 mongoose.connect('mongodb://localhost/rest_test');
 
-//express
+//express.js
 var app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
