@@ -18,6 +18,6 @@ app.use('/api', require('./routes/api'));
 //     res.send('server working');
 // });
 
-//starting up server
+//starting up server on port 8000
 app.listen(8000);
 console.log('API currently running on port 8000');
